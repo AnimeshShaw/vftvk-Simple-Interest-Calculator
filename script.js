@@ -23,7 +23,7 @@ function showRate() {
 function validateAmount() {
     var principal = document.getElementById("principal").value;
     if (!(parseInt(principal) > 0)) {
-        alert("Enter a number greater than 0.");
+        alert("Enter a positive number");
         document.getElementById("compute").disabled = true
         document.getElementById("principal").focus();
     } else {
