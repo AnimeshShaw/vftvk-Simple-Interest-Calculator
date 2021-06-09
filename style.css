@@ -1,4 +1,42 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+}
 
+h1 {
+    color: gray;
+}
 
+.main {
+    padding: 10 30 10 20;
+    margin-left: 40px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 25px;
+    
+}
+
+.title {
+    font: 30px 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    font-weight: 500;
+}
+
+#datatable, #results {
+    margin-left: 60px;
+}
+
+#results {
+    padding-left: 5px;
+    display: none;
+}
+
+td {
+    padding: 5 30 5 5;
+}
+
+#years {
+    width: 35px
+}
+
+#ph1, #ph2, #ph3, #ph4 {
+    background-color: yellow;
+}

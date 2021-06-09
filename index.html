@@ -1,16 +1,56 @@
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body>
+    <div class="main">
+        <h1 class="title">Simple Interest Calculator</h1>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <table id="datatable">
+            <tr>
+                <td><strong>Amount</strong></td>
+                <td><input type="number" id="principal" value="1000000" onchange="validateAmount()"></td>
+            </tr>
+            <tr>
+                <td><strong>Rate</strong></td>
+                <td><input type="range" min="1" max="100" value="3.5" step="0.5" id="rate" onchange="showRate()"><label id="rate-value">&nbsp;3.5%</label></td>
+            </tr>
+            <tr>
+                <td><strong>No. of Years</strong></td>
+                <td>
+                    <select id="years" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="compute" onclick="compute()">Compute Interest</button></td>                
+            </tr>
+        </table>
+
+        <div id="results">
+            If you deposit <span id="ph1"></span>, <br />
+            at an interest rate of <span id="ph2"></span>. <br />
+            You will receive an amount of <span id="ph3"></span>, <br />
+            in the year <span id="ph4"></span> <br />
+        </div>
+
+        <p>© Everyone Can Get Rich</p>
+        
+    </div>
+    
+</body>
+
 </html>
