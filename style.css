@@ -1,5 +1,7 @@
 body {
     background-color:black;
+    font-family: 'Arial', Gadget, sans-serif;
+    font-weight: 200;
 }
 
 h1 {
@@ -7,7 +9,7 @@ h1 {
 }
 
 .main {
-    padding: 10 30 10 20;
+    display: inline-block;    
     margin-left: 40px;
     background-color: white;
     width: fit-content;
@@ -16,12 +18,17 @@ h1 {
 }
 
 .title {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 30px;
     font: 30px 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     font-weight: 500;
 }
 
 #datatable, #results {
     margin-left: 60px;
+    
 }
 
 #results {
@@ -30,7 +37,18 @@ h1 {
 }
 
 td {
-    padding: 5 30 5 5;
+    display: inline-block;
+    column-width: 120px;
+    line-height: 25px;
+}
+
+#compute {
+    margin-bottom: 10px;
+}
+
+#copyright {
+    margin-left: 20px;
+    margin-right: 30px;
 }
 
 #years {
